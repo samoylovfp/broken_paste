@@ -29,7 +29,9 @@ jobs:
         with:
           toolchain: stable
           target: wasm32-unknown-unknown
-      - run: cargo install trunk
+      - uses: jetli/trunk-action@v0.2.0
+        with:
+          version: 'v0.16.0'
       - run: trunk build
       
       - name: Setup Pages
