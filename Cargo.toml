@@ -1,0 +1,13 @@
+[package]
+name = "broken_paste"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+eframe = "0.19.0"
+wasm-bindgen-futures = "0.4.33"
+
+[patch.crates-io]
+eframe = { git = "https://github.com/emilk/egui", branch = "master" }
